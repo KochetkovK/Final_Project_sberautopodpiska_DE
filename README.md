@@ -1,6 +1,6 @@
 # Анализ сайта «СберАвтоподписка»
 ## 1. EDA
-[Датасет] (https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw) представлен двумя таблицами ga_hits.csv и ga_sessions.csv. 
+[Датасет](https://drive.google.com/drive/folders/1rA4o6KHH-M2KMvBLHp5DZ5gioF2q7hZw) представлен двумя таблицами ga_hits.csv и ga_sessions.csv. 
 Подробная информация о EDA находится в файле sberautopodpiska.ipynb
 ## 2. Специализация DE
 ### Создать базу данных Postgresql
@@ -23,7 +23,7 @@
 Cохроняет данные с помощью функции copy из библиотеки psycopg2.\
 Запустить скрипт **insert_copy.py** из папки **modules**
 ### Добавить данные в базу данных
-[Новые данные] (https://drive.google.com/drive/folders/10LlyVJeMvVKQJaHRWkeo2t3sqklPRLJd)
+[Новые данные](https://drive.google.com/drive/folders/10LlyVJeMvVKQJaHRWkeo2t3sqklPRLJd)\
 Запустить в **Airflow** DAG **to_sql_dag** или **copy_dag.py**
 
 
