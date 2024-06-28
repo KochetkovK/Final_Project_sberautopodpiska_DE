@@ -1,0 +1,25 @@
+SELECT *
+FROM sessions
+ORDER BY visit_date, visit_time
+LIMIT 50;
+
+SELECT COUNT(1)
+FROM sessions;
+
+SELECT COUNT(1)
+FROM hits;
+
+SELECT *
+FROM hits
+ORDER BY hit_date
+LIMIT 50;
+
+SELECT *
+FROM sessions as s
+INNER JOIN hits as h ON CONCAT(s.session_id1, s.session_id2, s.session_id3) =
+	                    CONCAT(h.session_id1, h.session_id2, h.session_id3)
+ORDER BY visit_date, visit_time
+LIMIT 50;
+
+DROP TABLE IF EXISTS hits;
+DROP TABLE IF EXISTS sessions;
