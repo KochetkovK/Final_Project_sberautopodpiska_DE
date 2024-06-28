@@ -24,7 +24,7 @@ Cохроняет данные с помощью функции copy из биб
 Запустить скрипт **insert_copy.py** из папки **modules**
 ### Добавить данные в базу данных
 [Новые данные](https://drive.google.com/drive/folders/10LlyVJeMvVKQJaHRWkeo2t3sqklPRLJd)\
-Запустить в **Airflow** DAG **to_sql_dag** или **copy_dag.py**
+Запустить в **Airflow** DAG **to_sql_dag.py** или **copy_dag.py**
 
 
 
