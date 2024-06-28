@@ -12,8 +12,8 @@ path = os.environ.get('PROJECT_PATH', '..')
 
 start = time.time()
 
-df_hits = pd.read_csv(f'{path}/data/ga_hits.csv').sample(frac=0.25, random_state=200)
-df_sessions = pd.read_csv(f'{path}/data/ga_sessions.csv', low_memory=False).sample(frac=0.25, random_state=200)
+df_hits = pd.read_csv(f'{path}/data/ga_hits.csv')  # .sample(frac=0.25, random_state=200)
+df_sessions = pd.read_csv(f'{path}/data/ga_sessions.csv', low_memory=False)  # .sample(frac=0.25, random_state=200)
 df_full_sessions, df_full_hits = clean_df(df_sessions, df_hits)
 
 
